@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Random Weed Name</title>
+
+  
+  <link rel="stylesheet" href="css/foundation.min.css" />
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+  <style>
+  h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 6em;
+    text-align: center;
+    margin: 3em 0 1em 0;
+  }
+  </style>
+  
+
+  <script src="js/vendor/custom.modernizr.js"></script>
+  <script src="js/app.js"></script>
+
+</head>
+<body>
+
+  <div class="row">
+    <div class="large-centered columns">
+      <h1 id="name"></h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-centered columns">
+      <button id="generate_button" class="large button expand success">Make a new name</button>
+    </div>
+  </div>
+
+  <script src="js/vendor/jquery.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("#name").html(generateName());
+
+      $("#generate_button").click(function(){
+        $("#name").html(generateName());
+      });
+    });
+  </script>
+  
+</body>
+</html>
