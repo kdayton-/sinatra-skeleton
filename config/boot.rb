@@ -2,9 +2,6 @@ require "bundler"
 Bundler.setup(:default, ENV.fetch("RACK_ENV", :development))
 Bundler.require
 
-# Inject Mustache views module.
-module Views; end
-
 require File.expand_path("../environment", __FILE__)
 
 # Add directories to load path.

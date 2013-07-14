@@ -1,15 +1,15 @@
-source :rubygems
+source "https://rubygems.org"
 
-gem "sinatra", "~> 1.3"
-gem "mustache", "~> 0.99", require: "mustache/sinatra"
+gem "sinatra"
 
-group :development, :test do
+group :development do
+  gem "thin"
   gem "awesome_print"
   gem "pry"
   gem "racksh"
 end
 
 group :test do
-  gem "rspec", "~> 2.7"
-  gem "rack-test", "~> 0.6", require: "rack/test"
+  gem "rspec"
+  gem "rack-test", require: "rack/test"
 end

@@ -8,11 +8,9 @@ set :public_folder, File.expand_path("../../public", __FILE__)
 
 # Configure mustache.
 #
-set :mustache, {
+set :erb, {
   views: File.expand_path("../../app/views", __FILE__),
   templates: File.expand_path("../../app/templates", __FILE__),
-  layout: "layouts/default",
-  namespace: Views
 }
 
 # Set the views directory.

@@ -1,5 +1,5 @@
 require "./config/boot"
 
 get "/" do
-  mustache "index"
+  erb :index
 end
